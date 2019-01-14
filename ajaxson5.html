@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>The AJAXson 5</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href='style.css'/>
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <script type="text/javascript" src="ajaxson5.js"></script>
+</head>
+<body>
+    <header class="jumbotron">
+        <h1 class='text-center'><strong>AJAXson 5</strong></h1>
+    </header>
+    <div class='container-fluid'>
+    <form id="form-gif-request" />
+        <div class='well'>
+            <label>What kind of Jackson 5 related gif do you want?</label><br>
+            <input class='form-control' id="tag" type="text"/>
+        </div>
+
+        <div class='well'>
+
+            <label>Prove you are not a robot by filling in this sentence:<br>
+            </label>
+            <div class='input-group' id='validation'>
+              <input class='form-control' id='riddle' type='text'/>
+              <span class='input-group-addon'>Jacksons are better than 1.</span>
+            </div>
+            <p class="error" id="feedback" hidden="true"></p>
+            <div id='loader' style='display: none;'>
+              <p>
+                Loading...
+              </p>
+            </div>
+        </div>
+
+        <button class='btn btn-danger'>Get my GIF!</button><br><br>
+    </form>
+
+    <img class="img-responsive" id="gif" src="" hidden="true"/>
+
+    </div>
+</body>
+</html>
